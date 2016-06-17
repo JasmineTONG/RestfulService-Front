@@ -1,0 +1,18 @@
+<ion-view class="my-view">
+  <ion-nav-title class="my-view-title">商店</ion-nav-title>
+  <ion-content>
+    <ion-list>
+      <ion-item class="item item-thumbnail-left item-icon-right item-icon-right" ng-repeat="star in stars" type="item-text-wrap" href="#/tab/stars/{{star.id}}">
+        <img ng-src="{{star.face}}">
+        <h2>{{star.name}}</h2>
+        <p>{{star.lastText}}</p>
+        <!--<p>{{chat.price}}</p>-->
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(star)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

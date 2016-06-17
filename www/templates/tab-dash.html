@@ -1,0 +1,18 @@
+<ion-view class="my-view" cache-view="false"> <!--Dashboard-->
+  <ion-nav-title class="my-view-title">OPPA</ion-nav-title>
+
+  <ion-content class="padding assertive">
+    <!--<img src="img/oba_icon.png">-->
+    <div class="list">
+
+      <a class="item item-avatar item-icon-right" href="#" ng-repeat="star in stars track by $index">
+        <img ng-src="{{star.starProfile}}">
+        <h2 class="my-item-title">{{star.starName}}</h2>
+        <p>{{star.job}}</p>
+        <i class="icon" ng-class="{true:'ion-checkmark-circled',false:'ion-plus-circled'}[star.followed]"
+           ng-click="toggleFollowing($index,star.starId)"></i>
+        <!--<button class="button button-small button-clear icon-left ion-plus-circled">关注</button>-->
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

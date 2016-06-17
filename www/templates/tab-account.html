@@ -1,0 +1,66 @@
+<ion-view class="my-view">
+  <ion-nav-title class="my-view-title">我的</ion-nav-title>
+  <ion-content>
+    <div class="personal-avatar-block">
+      <img class="personal-avatar-img" ng-src="{{user.profileImg}}" ui-sref="tab.changeAvatar">
+      <span class="personal-avatar-name" id="personal-avatar-name">{{user.nickname}}</span>
+      <!--<div class="personal-avatar-buttons-block">-->
+        <!--<a class="personal-avatar-button" href="#/register">注册</a>-->
+        <!--|-->
+        <!--<a class="personal-avatar-button" href="#/login">登录</a>-->
+        <!--&lt;!&ndash;<button class="personal-avatar-button">注册</button>&ndash;&gt;-->
+        <!--&lt;!&ndash;<button class="personal-avatar-button">登录</button>&ndash;&gt;-->
+      <!--</div>-->
+    </div>
+
+
+    <div class="list">
+      <a class="item item-icon-left item-icon-right personal-list" ui-sref="tab.following">
+        <i class="icon ion-ios-heart"></i>
+        我关注的明星
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </a>
+
+      <a class="item item-icon-left item-icon-right personal-list" ui-sref="tab.changePassword">
+        <i class="icon ion-android-settings"></i>
+        修改密码
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </a>
+
+      <a class="item item-icon-left item-icon-right personal-list" ui-sref="tab.about">
+        <i class="icon ion-information-circled"></i>
+        关于我们
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </a>
+      <!--<a class="item item-icon-left item-icon-right personal-list" href="#">-->
+      <!--<i class="icon ion-android-mail"></i>-->
+      <!--我的消息-->
+      <!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+      <!--</a>-->
+    </div>
+
+    <!--<div class="list">-->
+    <!--<a class="item item-icon-left item-icon-right personal-list" ui-sref="tab.changePassword">-->
+    <!--<i class="icon ion-android-settings"></i>-->
+    <!--修改密码-->
+    <!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+    <!--</a>-->
+    <!--</div>-->
+
+    <!--<div class="list">-->
+    <!--<a class="item item-icon-left item-icon-right personal-list" href="#">-->
+    <!--<i class="icon ion-android-share-alt"></i>-->
+    <!--分享-->
+    <!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+    <!--</a>-->
+    <!--<a class="item item-icon-left item-icon-right personal-list" href="#">-->
+    <!--<i class="icon ion-information-circled"></i>-->
+    <!--关于我们-->
+    <!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+    <!--</a>-->
+    <!--</div>-->
+
+    <!--<footer><a href="#">关于我们 @高</a></footer>-->
+
+  </ion-content>
+</ion-view>

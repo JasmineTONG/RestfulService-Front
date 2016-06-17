@@ -1,0 +1,17 @@
+<ion-view class="my-view" cache-view="false"> <!--Dashboard-->
+  <ion-nav-title class="my-view-title">图库</ion-nav-title>
+
+  <ion-content>
+
+    <ion-list>
+      <ion-item class="item item-thumbnail-left item-icon-right item-icon-right" ng-repeat="starAlbum in albumStore"
+                type="item-text-wrap" ui-sref="tab.starAlbum({starId:starAlbum.starId})">
+        <img ng-src="{{starAlbum.albumProfile}}">
+        <h2 class="my-item-title">{{starAlbum.albumName}}</h2>
+        <p>{{starAlbum.albumDescription}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

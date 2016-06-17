@@ -1,0 +1,13 @@
+<!---->
+
+<ion-view class="my-view">
+  <ion-nav-title class="my-view-title">图库</ion-nav-title>
+  <ion-content class="padding">
+
+    <ul>
+      <li><img class="star_pic" ng-repeat="photo in album" ng-src="{{photo.objUrl}}"
+               ui-sref="tab.albumPic({picUrl:photo.objUrl,picDetail:photo.photoDetail})"></li>
+    </ul>
+
+  </ion-content>
+</ion-view>

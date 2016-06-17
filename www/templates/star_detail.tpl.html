@@ -1,0 +1,31 @@
+<ion-view class="my-view">
+  <ion-nav-title class="my-view-title">关于{{star.starName}}</ion-nav-title>
+  <ion-content class="padding">
+    <div class="list card">
+
+      <div class="item">
+        <h2 class="shop-item-title"><i class="icon ion-ios-heart-outline"></i>
+          {{star.starName}}</h2>
+      </div>
+
+      <div class="item item-image">
+        <img ng-src="{{star.starProfile}}">
+      </div>
+
+      <div class="item item-text-wrap">
+        <p>生日: {{star.birth}}</p>
+        <p>星座: {{star.constellation}}</p>
+        <p>血型: {{star.bloodType}}</p>
+        <p>身高: {{star.height}}</p>
+        <p>体重: {{star.weight}}</p>
+        <p>职业: {{star.job}}</p>
+        <p>代表作: {{star.masterWork}}</p>
+      </div>
+
+      <a class="item item-icon-left assertive" ng-click="toggleFollowing()">
+        <i class="icon" ng-class="{true:'ion-minus-circled',false:'ion-plus-circled'}[star.followed]"></i>{{star.followed?"取消关注":"关注"}}
+      </a>
+
+    </div>
+  </ion-content>
+</ion-view>

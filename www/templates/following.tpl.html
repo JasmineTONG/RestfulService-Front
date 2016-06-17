@@ -1,0 +1,18 @@
+<ion-view class="my-view" cache-view="false">
+  <ion-nav-title class="my-view-title">我关注的明星</ion-nav-title>
+  <ion-content>
+    <ion-list>
+      <ion-item class="item item-thumbnail-left item-icon-right item-icon-right"
+                ng-repeat="star in stars track by $index" type="item-text-wrap">
+        <img ng-src="{{star.starProfile}}" ui-sref="tab.star_detail({starId:star.starId})">
+        <h2 class="my-item-title">{{star.starName}}</h2>
+        <p>{{star.job}}</p>
+        <button class="button button-clear button-light icon-left ion-minus-circled"
+                ng-click="cancelFollowing($index,star.starId)">取消关注
+        </button>
+        <i class="icon ion-chevron-right icon-accessory" ui-sref="tab.star_detail({starId:star.starId})"></i>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

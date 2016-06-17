@@ -1,0 +1,35 @@
+<ion-view class="my-view">
+  <ion-nav-title class="my-view-title">开始Soul Oppa之旅</ion-nav-title>
+  <ion-content>
+     <form name="registerForm" ng-submit="signUp(registerForm)" novalidate>
+       <div class="list register-block">
+         <label class="item item-input register-input">
+           <span class="input-label">用户名：</span>
+           <input type="text" name="registerUsername" ng-model="register.username" ng-pattern="/[0-9_a-zA-Z]{1,20}$/"
+                  placeholder="1-20位英文字母、数字、下划线" required>
+         </label>
+         <label class="item item-input register-input">
+           <span class="input-label">昵称：</span>
+           <input type="text" name="registerNickname" ng-model="register.nickname"
+                  ng-pattern="/[a-zA-Z0-9\w\u4E00-\u9FA5]{1,10}$/" placeholder="你希望大家如何称呼你" required>
+         </label>
+         <label class="item item-input register-input">
+           <span class="input-label">密码：</span>
+           <input type="password" name="registerPassword" ng-model="register.password"
+                  ng-pattern="/^[0-9a-zA-Z]{6,16}$/" placeholder="6-16位英文字母或数字" required>
+         </label>
+         <label class="item item-input register-input">
+           <span class="input-label">确认密码：</span>
+           <input type="password" name="registerConfirmPassword" ng-model="register.confirmPassword"
+                  ng-pattern="/^[0-9a-zA-Z]{6,16}$/" placeholder="请再次输入密码" required>
+         </label>
+       </div>
+       <div class="padding">
+         <button class="button button-block button-assertive" type="submit">注册</button>
+         <button class="button button-block button-outline button-assertive" ui-sref="login">已有账号</button>
+       </div>
+     </form>
+
+
+  </ion-content>
+</ion-view>

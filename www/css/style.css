@@ -1,0 +1,254 @@
+/* Empty. Add your own CSS if you like */
+.my-view {
+  font-family: "sans-serif";
+  background-color: whitesmoke;
+}
+
+.my-view-title {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  font-family: "华文细黑";
+  font-weight: bold;
+}
+
+.my-item-title {
+  font-family: "微软雅黑";
+}
+
+.my-display-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* News */
+.star_name {
+  font-size: 15px;
+  color: #ff8477;
+}
+
+.weibo_info {
+  font-size: 15px;
+  color: rgba(34, 34, 34, 0.41);
+}
+
+.weibo_piece {
+  word-break: break-all;
+  font-size: 15px;
+  overflow: visible;
+  white-space: normal;
+}
+
+.weibo_date {
+  font-size: 15px;
+  color: rgba(34, 34, 34, 0.41);
+}
+
+.weibo_share {
+  font-size: 15px;
+  color: rgba(34, 34, 34, 0.41);
+  float: right;
+  text-decoration: underline;
+}
+
+.weibo_comment {
+  font-size: 15px;
+  color: rgba(34, 34, 34, 0.41);
+  float: right;
+  text-decoration: underline;
+  padding-right: 10px;
+}
+
+.weibo_pic {
+  width: 80px;
+  height: 80px;
+  vertical-align: top;
+  margin: 5px;
+  float: left;
+}
+
+.weibo_table {
+  clear: both;
+}
+
+/*Album*/
+
+
+.star_pic {
+  float: left;
+
+  display: block;
+  padding: 2px;
+  width: 120px;
+  height: 120px;
+}
+
+.album-pic-detail {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+
+  color: #333333;
+  /*font-family: "微软雅黑";*/
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Shop */
+.shop-item-title {
+  color: #666666;
+  font-weight: bold !important;
+}
+
+
+
+
+/* Personal */
+
+.personal-avatar-block {
+  height: 230px;
+}
+
+
+.personal-avatar-img {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  height: 120px;
+
+  overflow: hidden;
+  border-radius: 60px;
+}
+
+.personal-avatar-name {
+  display: block;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 60%;
+  height: 30px;
+
+  text-align: center;
+  font-size: 16px;
+  color: dimgray;
+}
+
+.personal-avatar-buttons-block {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 80px;
+  height: 30px;
+
+}
+
+.personal-avatar-button {
+  text-decoration: none;
+  color: steelblue;
+}
+
+.personal-list {
+  color:dimgray !important;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/*  Register */
+.register-block {
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.register-input {
+  margin-top: 8px;
+
+  border-radius: 4px;
+  border-color: lightgray;
+}
+
+
+/* Login */
+.login-block {
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.login-input {
+  margin-top: 8px;
+
+  border-radius: 4px;
+  border-color: lightgray;
+}
+
+.login-button {
+  border: 1px solid darkgray !important;
+  font-size: 15px;
+  color: dimgray !important;
+}
+
+.weibo-button {
+  border: 1px solid orangered !important;
+}
+
+.wechat-button {
+  border: 1px solid limegreen !important;
+}
+
+.login-button-icon {
+  position: relative;
+  top:5px;
+  left: -8px;
+}
+
+
+/* Change Avatar */
+.change-avatar-img {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:10px 10px 10px 10px;
+  width: 300px;
+  height: 300px;
+
+  overflow: hidden;
+
+  border:1px solid lightgray;
+  background-color:white;
+}
+
+/* About */
+.about-background {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 350px;
+
+}
+
+
+
+

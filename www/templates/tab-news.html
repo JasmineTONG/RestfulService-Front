@@ -1,0 +1,27 @@
+<ion-view class="my-view" cache-view="false"> <!--Dashboard-->
+  <ion-nav-title class="my-view-title">资讯</ion-nav-title>
+  <ion-content class="padding">
+
+    <ion-list ng-repeat="news in starNews">
+      <ion-item class="item " type="item-text-wrap">
+        <em class="star_name">{{news.starName}}</em><em class="weibo_info">发表了微博</em>
+        <hr>
+        <em class="weibo_piece">{{news.text}}</em>
+        <br>
+        <div>
+          <ul>
+            <li><img class="weibo_pic" ng-repeat="photo in news.newsImgs" ng-src="{{photo.newsImgUrl}}"
+                     ui-sref="tab.newsPic({picUrl:photo.newsImgUrl})"></li>
+          </ul>
+        </div>
+        <br>
+        <div class="weibo_table">
+          <em class="weibo_date">{{news.newsTime}}</em>
+          <!--<em class="weibo_share">转发</em>-->
+          <!--<em class="weibo_comment">评论</em>-->
+        </div>
+      </ion-item>
+      <br>
+    </ion-list>
+  </ion-content>
+</ion-view>
